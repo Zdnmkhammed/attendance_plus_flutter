@@ -1,0 +1,43 @@
+name: attendance
+description: "A modern classroom attendance tracking app."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # 🔥 Firebase
+  firebase_core: ^3.4.0
+  cloud_firestore: ^5.4.0
+
+  # 📍 Геолокация и сохранения
+  geolocator: ^10.1.0
+  shared_preferences: ^2.3.3
+  uuid: ^4.5.0
+
+  # ✨ Анимации и визуальные эффекты
+  animated_text_kit: ^4.2.2
+  flutter_animate: ^4.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+
